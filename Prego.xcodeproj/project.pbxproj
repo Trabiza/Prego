@@ -7,23 +7,61 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E7778116987ADEE7DD367154 /* Pods_Prego.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8184F1EF67839A3A51FA584 /* Pods_Prego.framework */; };
+		EB81A31F230C05E6002A0E9A /* Extensions+Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB81A31E230C05E6002A0E9A /* Extensions+Button.swift */; };
+		EB81A321230C061A002A0E9A /* Extensions+View.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB81A320230C061A002A0E9A /* Extensions+View.swift */; };
+		EB81A323230C0648002A0E9A /* Extensions+TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB81A322230C0648002A0E9A /* Extensions+TextField.swift */; };
+		EB81A325230C0672002A0E9A /* Extensions+StatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB81A324230C0672002A0E9A /* Extensions+StatusView.swift */; };
+		EB81A327230C068C002A0E9A /* Extensions+Cardview.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB81A326230C068C002A0E9A /* Extensions+Cardview.swift */; };
+		EB81A329230C0903002A0E9A /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB81A328230C0903002A0E9A /* LoginVC.swift */; };
+		EB81A32B230C0C26002A0E9A /* Utilits.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB81A32A230C0C26002A0E9A /* Utilits.swift */; };
+		EB81A32D230C0E6B002A0E9A /* AppColorsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB81A32C230C0E6B002A0E9A /* AppColorsManager.swift */; };
+		EB81A32F230C0F4A002A0E9A /* Extensions+Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB81A32E230C0F4A002A0E9A /* Extensions+Controller.swift */; };
+		EB81A332230C1384002A0E9A /* facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = EB81A330230C1384002A0E9A /* facebook.png */; };
+		EB81A333230C1384002A0E9A /* google-plus.png in Resources */ = {isa = PBXBuildFile; fileRef = EB81A331230C1384002A0E9A /* google-plus.png */; };
 		EBA61CD9230AA059001AC10F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA61CD8230AA059001AC10F /* AppDelegate.swift */; };
-		EBA61CDB230AA059001AC10F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA61CDA230AA059001AC10F /* ViewController.swift */; };
 		EBA61CDE230AA059001AC10F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBA61CDC230AA059001AC10F /* Main.storyboard */; };
 		EBA61CE1230AA059001AC10F /* Prego.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EBA61CDF230AA059001AC10F /* Prego.xcdatamodeld */; };
 		EBA61CE3230AA05C001AC10F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBA61CE2230AA05C001AC10F /* Assets.xcassets */; };
 		EBA61CE6230AA05C001AC10F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBA61CE4230AA05C001AC10F /* LaunchScreen.storyboard */; };
+		EBA61CF6230AA123001AC10F /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBA61CF5230AA123001AC10F /* Colors.xcassets */; };
+		EBA61CF8230AA13A001AC10F /* SplashVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA61CF7230AA13A001AC10F /* SplashVC.swift */; };
+		EBA61CFB230AA1AC001AC10F /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA61CFA230AA1AC001AC10F /* HomeVC.swift */; };
+		EBA61CFD230AA1F6001AC10F /* NavigationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA61CFC230AA1F6001AC10F /* NavigationManager.swift */; };
+		EBA61D01230AA365001AC10F /* HomeTabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA61D00230AA365001AC10F /* HomeTabBarVC.swift */; };
+		EBA61D04230AA550001AC10F /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = EBA61D03230AA550001AC10F /* logo.png */; };
+		EBA61D06230AA62C001AC10F /* logo2.png in Resources */ = {isa = PBXBuildFile; fileRef = EBA61D05230AA62C001AC10F /* logo2.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		26B295048FE78A178C6C746D /* Pods-Prego.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Prego.debug.xcconfig"; path = "Target Support Files/Pods-Prego/Pods-Prego.debug.xcconfig"; sourceTree = "<group>"; };
+		B8184F1EF67839A3A51FA584 /* Pods_Prego.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Prego.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB81A31E230C05E6002A0E9A /* Extensions+Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extensions+Button.swift"; sourceTree = "<group>"; };
+		EB81A320230C061A002A0E9A /* Extensions+View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extensions+View.swift"; sourceTree = "<group>"; };
+		EB81A322230C0648002A0E9A /* Extensions+TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extensions+TextField.swift"; sourceTree = "<group>"; };
+		EB81A324230C0672002A0E9A /* Extensions+StatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extensions+StatusView.swift"; sourceTree = "<group>"; };
+		EB81A326230C068C002A0E9A /* Extensions+Cardview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extensions+Cardview.swift"; sourceTree = "<group>"; };
+		EB81A328230C0903002A0E9A /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		EB81A32A230C0C26002A0E9A /* Utilits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilits.swift; sourceTree = "<group>"; };
+		EB81A32C230C0E6B002A0E9A /* AppColorsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColorsManager.swift; sourceTree = "<group>"; };
+		EB81A32E230C0F4A002A0E9A /* Extensions+Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extensions+Controller.swift"; sourceTree = "<group>"; };
+		EB81A330230C1384002A0E9A /* facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facebook.png; sourceTree = "<group>"; };
+		EB81A331230C1384002A0E9A /* google-plus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "google-plus.png"; sourceTree = "<group>"; };
 		EBA61CD5230AA059001AC10F /* Prego.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Prego.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBA61CD8230AA059001AC10F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EBA61CDA230AA059001AC10F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EBA61CDD230AA059001AC10F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EBA61CE0230AA059001AC10F /* Prego.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Prego.xcdatamodel; sourceTree = "<group>"; };
 		EBA61CE2230AA05C001AC10F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EBA61CE5230AA05C001AC10F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EBA61CE7230AA05C001AC10F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EBA61CF5230AA123001AC10F /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		EBA61CF7230AA13A001AC10F /* SplashVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashVC.swift; sourceTree = "<group>"; };
+		EBA61CFA230AA1AC001AC10F /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		EBA61CFC230AA1F6001AC10F /* NavigationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationManager.swift; sourceTree = "<group>"; };
+		EBA61D00230AA365001AC10F /* HomeTabBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBarVC.swift; sourceTree = "<group>"; };
+		EBA61D03230AA550001AC10F /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		EBA61D05230AA62C001AC10F /* logo2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo2.png; sourceTree = "<group>"; };
+		FC9F1A2F6D61402EE29D8EE8 /* Pods-Prego.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Prego.release.xcconfig"; path = "Target Support Files/Pods-Prego/Pods-Prego.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +69,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7778116987ADEE7DD367154 /* Pods_Prego.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		432195316DEB9566CF9427F3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				26B295048FE78A178C6C746D /* Pods-Prego.debug.xcconfig */,
+				FC9F1A2F6D61402EE29D8EE8 /* Pods-Prego.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		EBA61CCC230AA059001AC10F = {
 			isa = PBXGroup;
 			children = (
 				EBA61CD7230AA059001AC10F /* Prego */,
 				EBA61CD6230AA059001AC10F /* Products */,
+				432195316DEB9566CF9427F3 /* Pods */,
+				F795BC4E4464D8E0E2B25277 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +106,120 @@
 		EBA61CD7230AA059001AC10F /* Prego */ = {
 			isa = PBXGroup;
 			children = (
-				EBA61CD8230AA059001AC10F /* AppDelegate.swift */,
-				EBA61CDA230AA059001AC10F /* ViewController.swift */,
-				EBA61CDC230AA059001AC10F /* Main.storyboard */,
-				EBA61CE2230AA05C001AC10F /* Assets.xcassets */,
-				EBA61CE4230AA05C001AC10F /* LaunchScreen.storyboard */,
+				EBA61CEE230AA079001AC10F /* Support Files */,
+				EBA61CF2230AA0CD001AC10F /* Helper */,
+				EBA61CF1230AA0C2001AC10F /* Extensions */,
+				EBA61D02230AA52D001AC10F /* Images */,
+				EBA61CEF230AA08A001AC10F /* Local Data */,
+				EBA61CF0230AA09F001AC10F /* Cells */,
+				EBA61CF3230AA0D8001AC10F /* Model */,
+				EBA61CED230AA068001AC10F /* View Controller */,
+				EBA61CF4230AA0E7001AC10F /* Views */,
 				EBA61CE7230AA05C001AC10F /* Info.plist */,
-				EBA61CDF230AA059001AC10F /* Prego.xcdatamodeld */,
 			);
 			path = Prego;
+			sourceTree = "<group>";
+		};
+		EBA61CED230AA068001AC10F /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EBA61CF7230AA13A001AC10F /* SplashVC.swift */,
+				EBA61D00230AA365001AC10F /* HomeTabBarVC.swift */,
+				EBA61CFA230AA1AC001AC10F /* HomeVC.swift */,
+				EB81A328230C0903002A0E9A /* LoginVC.swift */,
+			);
+			path = "View Controller";
+			sourceTree = "<group>";
+		};
+		EBA61CEE230AA079001AC10F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				EBA61CE2230AA05C001AC10F /* Assets.xcassets */,
+				EBA61CF5230AA123001AC10F /* Colors.xcassets */,
+				EBA61CD8230AA059001AC10F /* AppDelegate.swift */,
+			);
+			path = "Support Files";
+			sourceTree = "<group>";
+		};
+		EBA61CEF230AA08A001AC10F /* Local Data */ = {
+			isa = PBXGroup;
+			children = (
+				EBA61CDF230AA059001AC10F /* Prego.xcdatamodeld */,
+			);
+			path = "Local Data";
+			sourceTree = "<group>";
+		};
+		EBA61CF0230AA09F001AC10F /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		EBA61CF1230AA0C2001AC10F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				EB81A31E230C05E6002A0E9A /* Extensions+Button.swift */,
+				EB81A320230C061A002A0E9A /* Extensions+View.swift */,
+				EB81A322230C0648002A0E9A /* Extensions+TextField.swift */,
+				EB81A324230C0672002A0E9A /* Extensions+StatusView.swift */,
+				EB81A326230C068C002A0E9A /* Extensions+Cardview.swift */,
+				EB81A32E230C0F4A002A0E9A /* Extensions+Controller.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		EBA61CF2230AA0CD001AC10F /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				EBA61CF9230AA17B001AC10F /* Manager */,
+				EB81A32A230C0C26002A0E9A /* Utilits.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		EBA61CF3230AA0D8001AC10F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EBA61CF4230AA0E7001AC10F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EBA61CDC230AA059001AC10F /* Main.storyboard */,
+				EBA61CE4230AA05C001AC10F /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EBA61CF9230AA17B001AC10F /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				EBA61CFC230AA1F6001AC10F /* NavigationManager.swift */,
+				EB81A32C230C0E6B002A0E9A /* AppColorsManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		EBA61D02230AA52D001AC10F /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				EB81A330230C1384002A0E9A /* facebook.png */,
+				EB81A331230C1384002A0E9A /* google-plus.png */,
+				EBA61D03230AA550001AC10F /* logo.png */,
+				EBA61D05230AA62C001AC10F /* logo2.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		F795BC4E4464D8E0E2B25277 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B8184F1EF67839A3A51FA584 /* Pods_Prego.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +229,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EBA61CEA230AA05C001AC10F /* Build configuration list for PBXNativeTarget "Prego" */;
 			buildPhases = (
+				357F2D0DB606F6731C099493 /* [CP] Check Pods Manifest.lock */,
 				EBA61CD1230AA059001AC10F /* Sources */,
 				EBA61CD2230AA059001AC10F /* Frameworks */,
 				EBA61CD3230AA059001AC10F /* Resources */,
+				57293CCAB3CAC4F6EC4505BA /* [CP] Embed Pods Frameworks */,
+				EA467CDF3DBB8E4A60051B37 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -125,7 +283,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB81A333230C1384002A0E9A /* google-plus.png in Resources */,
 				EBA61CE6230AA05C001AC10F /* LaunchScreen.storyboard in Resources */,
+				EBA61D06230AA62C001AC10F /* logo2.png in Resources */,
+				EBA61D04230AA550001AC10F /* logo.png in Resources */,
+				EB81A332230C1384002A0E9A /* facebook.png in Resources */,
+				EBA61CF6230AA123001AC10F /* Colors.xcassets in Resources */,
 				EBA61CE3230AA05C001AC10F /* Assets.xcassets in Resources */,
 				EBA61CDE230AA059001AC10F /* Main.storyboard in Resources */,
 			);
@@ -133,14 +296,123 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		357F2D0DB606F6731C099493 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Prego-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		57293CCAB3CAC4F6EC4505BA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Prego/Pods-Prego-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/Cosmos/Cosmos.framework",
+				"${BUILT_PRODUCTS_DIR}/DropDown/DropDown.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKShareKit/FBSDKShareKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookCore/FacebookCore.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookLogin/FacebookLogin.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookShare/FacebookShare.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/ReachabilitySwift/Reachability.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cosmos.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DropDown.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKShareKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookLogin.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookShare.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reachability.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Prego/Pods-Prego-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EA467CDF3DBB8E4A60051B37 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Prego/Pods-Prego-resources.sh",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Prego/Pods-Prego-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		EBA61CD1230AA059001AC10F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				EBA61CE1230AA059001AC10F /* Prego.xcdatamodeld in Sources */,
-				EBA61CDB230AA059001AC10F /* ViewController.swift in Sources */,
+				EBA61CFB230AA1AC001AC10F /* HomeVC.swift in Sources */,
+				EB81A329230C0903002A0E9A /* LoginVC.swift in Sources */,
 				EBA61CD9230AA059001AC10F /* AppDelegate.swift in Sources */,
+				EB81A32B230C0C26002A0E9A /* Utilits.swift in Sources */,
+				EBA61D01230AA365001AC10F /* HomeTabBarVC.swift in Sources */,
+				EB81A325230C0672002A0E9A /* Extensions+StatusView.swift in Sources */,
+				EB81A32F230C0F4A002A0E9A /* Extensions+Controller.swift in Sources */,
+				EB81A31F230C05E6002A0E9A /* Extensions+Button.swift in Sources */,
+				EBA61CF8230AA13A001AC10F /* SplashVC.swift in Sources */,
+				EB81A327230C068C002A0E9A /* Extensions+Cardview.swift in Sources */,
+				EB81A323230C0648002A0E9A /* Extensions+TextField.swift in Sources */,
+				EB81A32D230C0E6B002A0E9A /* AppColorsManager.swift in Sources */,
+				EB81A321230C061A002A0E9A /* Extensions+View.swift in Sources */,
+				EBA61CFD230AA1F6001AC10F /* NavigationManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +554,7 @@
 		};
 		EBA61CEB230AA05C001AC10F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26B295048FE78A178C6C746D /* Pods-Prego.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +573,7 @@
 		};
 		EBA61CEC230AA05C001AC10F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC9F1A2F6D61402EE29D8EE8 /* Pods-Prego.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
