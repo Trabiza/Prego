@@ -21,6 +21,12 @@ extension UIViewController {
 }
 
 extension UIViewController {
+    func hideStatusBarLine(){
+        self.navigationController?.navigationBar.shouldRemoveShadow(true)
+    }
+}
+
+extension UIViewController {
     
     func showToast(message: String, controller: UIViewController) {
         

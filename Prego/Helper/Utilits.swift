@@ -20,4 +20,13 @@ public class Utilits {
             textField.setIcon(UIImage(named: imageName)!)
         }
     }
+    
+    static func cornerLeftRight(view: UIView){
+        if #available(iOS 11.0, *){
+            view.layer.masksToBounds = true
+            view.clipsToBounds = true
+            view.layer.cornerRadius = 30
+            view.layer.maskedCorners = [.layerMaxXMinYCorner, .layerMinXMinYCorner]
+        }
+    }
 }

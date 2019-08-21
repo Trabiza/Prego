@@ -8,6 +8,29 @@
 
 /* Begin PBXBuildFile section */
 		E7778116987ADEE7DD367154 /* Pods_Prego.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8184F1EF67839A3A51FA584 /* Pods_Prego.framework */; };
+		EB40D56F230D45A600559EAB /* HomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB40D56D230D45A600559EAB /* HomeCell.swift */; };
+		EB40D570230D45A600559EAB /* HomeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB40D56E230D45A600559EAB /* HomeCell.xib */; };
+		EB40D572230D470500559EAB /* ImagesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB40D571230D470500559EAB /* ImagesManager.swift */; };
+		EB40D576230D497800559EAB /* second.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EB40D573230D497600559EAB /* second.jpg */; };
+		EB40D577230D497800559EAB /* third.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = EB40D574230D497700559EAB /* third.jpeg */; };
+		EB40D578230D497800559EAB /* first.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EB40D575230D497800559EAB /* first.jpg */; };
+		EB40D57A230D4AF600559EAB /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB40D579230D4AF600559EAB /* Config.swift */; };
+		EB40D57C230D4B4100559EAB /* URLManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB40D57B230D4B4100559EAB /* URLManager.swift */; };
+		EB40D57E230D67D900559EAB /* CusinesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB40D57D230D67D900559EAB /* CusinesVC.swift */; };
+		EB40D581230D68ED00559EAB /* CusinesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB40D57F230D68ED00559EAB /* CusinesCell.swift */; };
+		EB40D582230D68ED00559EAB /* CusinesCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB40D580230D68ED00559EAB /* CusinesCell.xib */; };
+		EB40D587230D6FB500559EAB /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EB40D584230D6FB200559EAB /* Roboto-Regular.ttf */; };
+		EB40D588230D6FB500559EAB /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EB40D585230D6FB200559EAB /* Roboto-Medium.ttf */; };
+		EB40D589230D6FB500559EAB /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EB40D586230D6FB300559EAB /* Roboto-Bold.ttf */; };
+		EB40D58B230D703200559EAB /* AppFontManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB40D58A230D703200559EAB /* AppFontManager.swift */; };
+		EB40D590230D734E00559EAB /* 4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EB40D58C230D734B00559EAB /* 4.jpg */; };
+		EB40D591230D734E00559EAB /* 1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = EB40D58D230D734C00559EAB /* 1.jpeg */; };
+		EB40D592230D734E00559EAB /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EB40D58E230D734D00559EAB /* 2.jpg */; };
+		EB40D593230D734E00559EAB /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EB40D58F230D734E00559EAB /* 3.jpg */; };
+		EB40D595230D7C8200559EAB /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB40D594230D7C8200559EAB /* SignUpVC.swift */; };
+		EB40D597230D812300559EAB /* SubCusinesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB40D596230D812300559EAB /* SubCusinesVC.swift */; };
+		EB40D59A230D839F00559EAB /* SubCusinesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB40D598230D839F00559EAB /* SubCusinesCell.swift */; };
+		EB40D59B230D839F00559EAB /* SubCusinesCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB40D599230D839F00559EAB /* SubCusinesCell.xib */; };
 		EB81A31F230C05E6002A0E9A /* Extensions+Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB81A31E230C05E6002A0E9A /* Extensions+Button.swift */; };
 		EB81A321230C061A002A0E9A /* Extensions+View.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB81A320230C061A002A0E9A /* Extensions+View.swift */; };
 		EB81A323230C0648002A0E9A /* Extensions+TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB81A322230C0648002A0E9A /* Extensions+TextField.swift */; };
@@ -36,6 +59,29 @@
 /* Begin PBXFileReference section */
 		26B295048FE78A178C6C746D /* Pods-Prego.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Prego.debug.xcconfig"; path = "Target Support Files/Pods-Prego/Pods-Prego.debug.xcconfig"; sourceTree = "<group>"; };
 		B8184F1EF67839A3A51FA584 /* Pods_Prego.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Prego.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB40D56D230D45A600559EAB /* HomeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCell.swift; sourceTree = "<group>"; };
+		EB40D56E230D45A600559EAB /* HomeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCell.xib; sourceTree = "<group>"; };
+		EB40D571230D470500559EAB /* ImagesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesManager.swift; sourceTree = "<group>"; };
+		EB40D573230D497600559EAB /* second.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = second.jpg; sourceTree = "<group>"; };
+		EB40D574230D497700559EAB /* third.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = third.jpeg; sourceTree = "<group>"; };
+		EB40D575230D497800559EAB /* first.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = first.jpg; sourceTree = "<group>"; };
+		EB40D579230D4AF600559EAB /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		EB40D57B230D4B4100559EAB /* URLManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLManager.swift; sourceTree = "<group>"; };
+		EB40D57D230D67D900559EAB /* CusinesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CusinesVC.swift; sourceTree = "<group>"; };
+		EB40D57F230D68ED00559EAB /* CusinesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CusinesCell.swift; sourceTree = "<group>"; };
+		EB40D580230D68ED00559EAB /* CusinesCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CusinesCell.xib; sourceTree = "<group>"; };
+		EB40D584230D6FB200559EAB /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		EB40D585230D6FB200559EAB /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		EB40D586230D6FB300559EAB /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		EB40D58A230D703200559EAB /* AppFontManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFontManager.swift; sourceTree = "<group>"; };
+		EB40D58C230D734B00559EAB /* 4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 4.jpg; sourceTree = "<group>"; };
+		EB40D58D230D734C00559EAB /* 1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpeg; sourceTree = "<group>"; };
+		EB40D58E230D734D00559EAB /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
+		EB40D58F230D734E00559EAB /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpg; sourceTree = "<group>"; };
+		EB40D594230D7C8200559EAB /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
+		EB40D596230D812300559EAB /* SubCusinesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubCusinesVC.swift; sourceTree = "<group>"; };
+		EB40D598230D839F00559EAB /* SubCusinesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubCusinesCell.swift; sourceTree = "<group>"; };
+		EB40D599230D839F00559EAB /* SubCusinesCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SubCusinesCell.xib; sourceTree = "<group>"; };
 		EB81A31E230C05E6002A0E9A /* Extensions+Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extensions+Button.swift"; sourceTree = "<group>"; };
 		EB81A320230C061A002A0E9A /* Extensions+View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extensions+View.swift"; sourceTree = "<group>"; };
 		EB81A322230C0648002A0E9A /* Extensions+TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extensions+TextField.swift"; sourceTree = "<group>"; };
@@ -85,6 +131,16 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		EB40D583230D6FA600559EAB /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				EB40D586230D6FB300559EAB /* Roboto-Bold.ttf */,
+				EB40D585230D6FB200559EAB /* Roboto-Medium.ttf */,
+				EB40D584230D6FB200559EAB /* Roboto-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		EBA61CCC230AA059001AC10F = {
 			isa = PBXGroup;
 			children = (
@@ -106,6 +162,7 @@
 		EBA61CD7230AA059001AC10F /* Prego */ = {
 			isa = PBXGroup;
 			children = (
+				EB40D583230D6FA600559EAB /* Fonts */,
 				EBA61CEE230AA079001AC10F /* Support Files */,
 				EBA61CF2230AA0CD001AC10F /* Helper */,
 				EBA61CF1230AA0C2001AC10F /* Extensions */,
@@ -126,7 +183,10 @@
 				EBA61CF7230AA13A001AC10F /* SplashVC.swift */,
 				EBA61D00230AA365001AC10F /* HomeTabBarVC.swift */,
 				EBA61CFA230AA1AC001AC10F /* HomeVC.swift */,
+				EB40D57D230D67D900559EAB /* CusinesVC.swift */,
+				EB40D596230D812300559EAB /* SubCusinesVC.swift */,
 				EB81A328230C0903002A0E9A /* LoginVC.swift */,
+				EB40D594230D7C8200559EAB /* SignUpVC.swift */,
 			);
 			path = "View Controller";
 			sourceTree = "<group>";
@@ -152,6 +212,12 @@
 		EBA61CF0230AA09F001AC10F /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				EB40D56D230D45A600559EAB /* HomeCell.swift */,
+				EB40D56E230D45A600559EAB /* HomeCell.xib */,
+				EB40D57F230D68ED00559EAB /* CusinesCell.swift */,
+				EB40D580230D68ED00559EAB /* CusinesCell.xib */,
+				EB40D598230D839F00559EAB /* SubCusinesCell.swift */,
+				EB40D599230D839F00559EAB /* SubCusinesCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -174,6 +240,8 @@
 			children = (
 				EBA61CF9230AA17B001AC10F /* Manager */,
 				EB81A32A230C0C26002A0E9A /* Utilits.swift */,
+				EB40D579230D4AF600559EAB /* Config.swift */,
+				EB40D57B230D4B4100559EAB /* URLManager.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -199,6 +267,8 @@
 			children = (
 				EBA61CFC230AA1F6001AC10F /* NavigationManager.swift */,
 				EB81A32C230C0E6B002A0E9A /* AppColorsManager.swift */,
+				EB40D571230D470500559EAB /* ImagesManager.swift */,
+				EB40D58A230D703200559EAB /* AppFontManager.swift */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -206,6 +276,13 @@
 		EBA61D02230AA52D001AC10F /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				EB40D58D230D734C00559EAB /* 1.jpeg */,
+				EB40D58E230D734D00559EAB /* 2.jpg */,
+				EB40D58F230D734E00559EAB /* 3.jpg */,
+				EB40D58C230D734B00559EAB /* 4.jpg */,
+				EB40D575230D497800559EAB /* first.jpg */,
+				EB40D573230D497600559EAB /* second.jpg */,
+				EB40D574230D497700559EAB /* third.jpeg */,
 				EB81A330230C1384002A0E9A /* facebook.png */,
 				EB81A331230C1384002A0E9A /* google-plus.png */,
 				EBA61D03230AA550001AC10F /* logo.png */,
@@ -283,14 +360,27 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB40D578230D497800559EAB /* first.jpg in Resources */,
 				EB81A333230C1384002A0E9A /* google-plus.png in Resources */,
+				EB40D59B230D839F00559EAB /* SubCusinesCell.xib in Resources */,
+				EB40D570230D45A600559EAB /* HomeCell.xib in Resources */,
 				EBA61CE6230AA05C001AC10F /* LaunchScreen.storyboard in Resources */,
 				EBA61D06230AA62C001AC10F /* logo2.png in Resources */,
+				EB40D588230D6FB500559EAB /* Roboto-Medium.ttf in Resources */,
 				EBA61D04230AA550001AC10F /* logo.png in Resources */,
+				EB40D590230D734E00559EAB /* 4.jpg in Resources */,
+				EB40D582230D68ED00559EAB /* CusinesCell.xib in Resources */,
+				EB40D592230D734E00559EAB /* 2.jpg in Resources */,
 				EB81A332230C1384002A0E9A /* facebook.png in Resources */,
+				EB40D587230D6FB500559EAB /* Roboto-Regular.ttf in Resources */,
 				EBA61CF6230AA123001AC10F /* Colors.xcassets in Resources */,
 				EBA61CE3230AA05C001AC10F /* Assets.xcassets in Resources */,
+				EB40D591230D734E00559EAB /* 1.jpeg in Resources */,
+				EB40D593230D734E00559EAB /* 3.jpg in Resources */,
 				EBA61CDE230AA059001AC10F /* Main.storyboard in Resources */,
+				EB40D577230D497800559EAB /* third.jpeg in Resources */,
+				EB40D589230D6FB500559EAB /* Roboto-Bold.ttf in Resources */,
+				EB40D576230D497800559EAB /* second.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,15 +464,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Prego/Pods-Prego-resources.sh",
 				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
 			);
@@ -399,18 +485,28 @@
 			buildActionMask = 2147483647;
 			files = (
 				EBA61CE1230AA059001AC10F /* Prego.xcdatamodeld in Sources */,
+				EB40D57E230D67D900559EAB /* CusinesVC.swift in Sources */,
+				EB40D597230D812300559EAB /* SubCusinesVC.swift in Sources */,
 				EBA61CFB230AA1AC001AC10F /* HomeVC.swift in Sources */,
+				EB40D56F230D45A600559EAB /* HomeCell.swift in Sources */,
+				EB40D58B230D703200559EAB /* AppFontManager.swift in Sources */,
 				EB81A329230C0903002A0E9A /* LoginVC.swift in Sources */,
+				EB40D581230D68ED00559EAB /* CusinesCell.swift in Sources */,
 				EBA61CD9230AA059001AC10F /* AppDelegate.swift in Sources */,
 				EB81A32B230C0C26002A0E9A /* Utilits.swift in Sources */,
+				EB40D57C230D4B4100559EAB /* URLManager.swift in Sources */,
 				EBA61D01230AA365001AC10F /* HomeTabBarVC.swift in Sources */,
 				EB81A325230C0672002A0E9A /* Extensions+StatusView.swift in Sources */,
 				EB81A32F230C0F4A002A0E9A /* Extensions+Controller.swift in Sources */,
+				EB40D595230D7C8200559EAB /* SignUpVC.swift in Sources */,
 				EB81A31F230C05E6002A0E9A /* Extensions+Button.swift in Sources */,
 				EBA61CF8230AA13A001AC10F /* SplashVC.swift in Sources */,
+				EB40D57A230D4AF600559EAB /* Config.swift in Sources */,
 				EB81A327230C068C002A0E9A /* Extensions+Cardview.swift in Sources */,
 				EB81A323230C0648002A0E9A /* Extensions+TextField.swift in Sources */,
 				EB81A32D230C0E6B002A0E9A /* AppColorsManager.swift in Sources */,
+				EB40D59A230D839F00559EAB /* SubCusinesCell.swift in Sources */,
+				EB40D572230D470500559EAB /* ImagesManager.swift in Sources */,
 				EB81A321230C061A002A0E9A /* Extensions+View.swift in Sources */,
 				EBA61CFD230AA1F6001AC10F /* NavigationManager.swift in Sources */,
 			);
