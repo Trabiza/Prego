@@ -31,6 +31,13 @@
 		EB40D597230D812300559EAB /* SubCusinesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB40D596230D812300559EAB /* SubCusinesVC.swift */; };
 		EB40D59A230D839F00559EAB /* SubCusinesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB40D598230D839F00559EAB /* SubCusinesCell.swift */; };
 		EB40D59B230D839F00559EAB /* SubCusinesCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB40D599230D839F00559EAB /* SubCusinesCell.xib */; };
+		EB5DE683230E987A00ACC340 /* GuideVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5DE682230E987A00ACC340 /* GuideVC.swift */; };
+		EB5DE687230E99B900ACC340 /* SlideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5DE686230E99B900ACC340 /* SlideView.swift */; };
+		EB5DE689230E99E400ACC340 /* SlideView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB5DE688230E99E400ACC340 /* SlideView.xib */; };
+		EB5DE68E230E9BAB00ACC340 /* TrackingOrder.png in Resources */ = {isa = PBXBuildFile; fileRef = EB5DE68B230E9BA900ACC340 /* TrackingOrder.png */; };
+		EB5DE68F230E9BAB00ACC340 /* ChooseFood.png in Resources */ = {isa = PBXBuildFile; fileRef = EB5DE68C230E9BAA00ACC340 /* ChooseFood.png */; };
+		EB5DE690230E9BAB00ACC340 /* FastDelivery.png in Resources */ = {isa = PBXBuildFile; fileRef = EB5DE68D230E9BAA00ACC340 /* FastDelivery.png */; };
+		EB5DE692230E9CCC00ACC340 /* Guide.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5DE691230E9CCC00ACC340 /* Guide.swift */; };
 		EB81A31F230C05E6002A0E9A /* Extensions+Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB81A31E230C05E6002A0E9A /* Extensions+Button.swift */; };
 		EB81A321230C061A002A0E9A /* Extensions+View.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB81A320230C061A002A0E9A /* Extensions+View.swift */; };
 		EB81A323230C0648002A0E9A /* Extensions+TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB81A322230C0648002A0E9A /* Extensions+TextField.swift */; };
@@ -82,6 +89,13 @@
 		EB40D596230D812300559EAB /* SubCusinesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubCusinesVC.swift; sourceTree = "<group>"; };
 		EB40D598230D839F00559EAB /* SubCusinesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubCusinesCell.swift; sourceTree = "<group>"; };
 		EB40D599230D839F00559EAB /* SubCusinesCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SubCusinesCell.xib; sourceTree = "<group>"; };
+		EB5DE682230E987A00ACC340 /* GuideVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideVC.swift; sourceTree = "<group>"; };
+		EB5DE686230E99B900ACC340 /* SlideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideView.swift; sourceTree = "<group>"; };
+		EB5DE688230E99E400ACC340 /* SlideView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SlideView.xib; sourceTree = "<group>"; };
+		EB5DE68B230E9BA900ACC340 /* TrackingOrder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TrackingOrder.png; sourceTree = "<group>"; };
+		EB5DE68C230E9BAA00ACC340 /* ChooseFood.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ChooseFood.png; sourceTree = "<group>"; };
+		EB5DE68D230E9BAA00ACC340 /* FastDelivery.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FastDelivery.png; sourceTree = "<group>"; };
+		EB5DE691230E9CCC00ACC340 /* Guide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Guide.swift; sourceTree = "<group>"; };
 		EB81A31E230C05E6002A0E9A /* Extensions+Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extensions+Button.swift"; sourceTree = "<group>"; };
 		EB81A320230C061A002A0E9A /* Extensions+View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extensions+View.swift"; sourceTree = "<group>"; };
 		EB81A322230C0648002A0E9A /* Extensions+TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extensions+TextField.swift"; sourceTree = "<group>"; };
@@ -141,6 +155,39 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
+		EB5DE684230E98A000ACC340 /* TestImages */ = {
+			isa = PBXGroup;
+			children = (
+				EB40D58D230D734C00559EAB /* 1.jpeg */,
+				EB40D58E230D734D00559EAB /* 2.jpg */,
+				EB40D58F230D734E00559EAB /* 3.jpg */,
+				EB40D58C230D734B00559EAB /* 4.jpg */,
+				EB40D575230D497800559EAB /* first.jpg */,
+				EB40D573230D497600559EAB /* second.jpg */,
+				EB40D574230D497700559EAB /* third.jpeg */,
+			);
+			path = TestImages;
+			sourceTree = "<group>";
+		};
+		EB5DE685230E999500ACC340 /* XIB */ = {
+			isa = PBXGroup;
+			children = (
+				EB5DE686230E99B900ACC340 /* SlideView.swift */,
+				EB5DE688230E99E400ACC340 /* SlideView.xib */,
+			);
+			path = XIB;
+			sourceTree = "<group>";
+		};
+		EB5DE68A230E9B9D00ACC340 /* Guide Images */ = {
+			isa = PBXGroup;
+			children = (
+				EB5DE68C230E9BAA00ACC340 /* ChooseFood.png */,
+				EB5DE68D230E9BAA00ACC340 /* FastDelivery.png */,
+				EB5DE68B230E9BA900ACC340 /* TrackingOrder.png */,
+			);
+			path = "Guide Images";
+			sourceTree = "<group>";
+		};
 		EBA61CCC230AA059001AC10F = {
 			isa = PBXGroup;
 			children = (
@@ -181,6 +228,7 @@
 			isa = PBXGroup;
 			children = (
 				EBA61CF7230AA13A001AC10F /* SplashVC.swift */,
+				EB5DE682230E987A00ACC340 /* GuideVC.swift */,
 				EBA61D00230AA365001AC10F /* HomeTabBarVC.swift */,
 				EBA61CFA230AA1AC001AC10F /* HomeVC.swift */,
 				EB40D57D230D67D900559EAB /* CusinesVC.swift */,
@@ -249,6 +297,7 @@
 		EBA61CF3230AA0D8001AC10F /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				EB5DE691230E9CCC00ACC340 /* Guide.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -256,6 +305,7 @@
 		EBA61CF4230AA0E7001AC10F /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				EB5DE685230E999500ACC340 /* XIB */,
 				EBA61CDC230AA059001AC10F /* Main.storyboard */,
 				EBA61CE4230AA05C001AC10F /* LaunchScreen.storyboard */,
 			);
@@ -276,13 +326,8 @@
 		EBA61D02230AA52D001AC10F /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				EB40D58D230D734C00559EAB /* 1.jpeg */,
-				EB40D58E230D734D00559EAB /* 2.jpg */,
-				EB40D58F230D734E00559EAB /* 3.jpg */,
-				EB40D58C230D734B00559EAB /* 4.jpg */,
-				EB40D575230D497800559EAB /* first.jpg */,
-				EB40D573230D497600559EAB /* second.jpg */,
-				EB40D574230D497700559EAB /* third.jpeg */,
+				EB5DE68A230E9B9D00ACC340 /* Guide Images */,
+				EB5DE684230E98A000ACC340 /* TestImages */,
 				EB81A330230C1384002A0E9A /* facebook.png */,
 				EB81A331230C1384002A0E9A /* google-plus.png */,
 				EBA61D03230AA550001AC10F /* logo.png */,
@@ -360,11 +405,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB5DE689230E99E400ACC340 /* SlideView.xib in Resources */,
 				EB40D578230D497800559EAB /* first.jpg in Resources */,
 				EB81A333230C1384002A0E9A /* google-plus.png in Resources */,
 				EB40D59B230D839F00559EAB /* SubCusinesCell.xib in Resources */,
 				EB40D570230D45A600559EAB /* HomeCell.xib in Resources */,
 				EBA61CE6230AA05C001AC10F /* LaunchScreen.storyboard in Resources */,
+				EB5DE68E230E9BAB00ACC340 /* TrackingOrder.png in Resources */,
 				EBA61D06230AA62C001AC10F /* logo2.png in Resources */,
 				EB40D588230D6FB500559EAB /* Roboto-Medium.ttf in Resources */,
 				EBA61D04230AA550001AC10F /* logo.png in Resources */,
@@ -377,6 +424,8 @@
 				EBA61CE3230AA05C001AC10F /* Assets.xcassets in Resources */,
 				EB40D591230D734E00559EAB /* 1.jpeg in Resources */,
 				EB40D593230D734E00559EAB /* 3.jpg in Resources */,
+				EB5DE68F230E9BAB00ACC340 /* ChooseFood.png in Resources */,
+				EB5DE690230E9BAB00ACC340 /* FastDelivery.png in Resources */,
 				EBA61CDE230AA059001AC10F /* Main.storyboard in Resources */,
 				EB40D577230D497800559EAB /* third.jpeg in Resources */,
 				EB40D589230D6FB500559EAB /* Roboto-Bold.ttf in Resources */,
@@ -488,8 +537,10 @@
 				EB40D57E230D67D900559EAB /* CusinesVC.swift in Sources */,
 				EB40D597230D812300559EAB /* SubCusinesVC.swift in Sources */,
 				EBA61CFB230AA1AC001AC10F /* HomeVC.swift in Sources */,
+				EB5DE692230E9CCC00ACC340 /* Guide.swift in Sources */,
 				EB40D56F230D45A600559EAB /* HomeCell.swift in Sources */,
 				EB40D58B230D703200559EAB /* AppFontManager.swift in Sources */,
+				EB5DE687230E99B900ACC340 /* SlideView.swift in Sources */,
 				EB81A329230C0903002A0E9A /* LoginVC.swift in Sources */,
 				EB40D581230D68ED00559EAB /* CusinesCell.swift in Sources */,
 				EBA61CD9230AA059001AC10F /* AppDelegate.swift in Sources */,
@@ -497,6 +548,7 @@
 				EB40D57C230D4B4100559EAB /* URLManager.swift in Sources */,
 				EBA61D01230AA365001AC10F /* HomeTabBarVC.swift in Sources */,
 				EB81A325230C0672002A0E9A /* Extensions+StatusView.swift in Sources */,
+				EB5DE683230E987A00ACC340 /* GuideVC.swift in Sources */,
 				EB81A32F230C0F4A002A0E9A /* Extensions+Controller.swift in Sources */,
 				EB40D595230D7C8200559EAB /* SignUpVC.swift in Sources */,
 				EB81A31F230C05E6002A0E9A /* Extensions+Button.swift in Sources */,

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Bv8-v7-fKj">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="eTQ-KC-7Jg">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -44,6 +44,43 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1860" y="32"/>
+        </scene>
+        <!--GuideVC-->
+        <scene sceneID="IuB-5e-dLN">
+            <objects>
+                <viewController id="wUX-Za-0uF" customClass="GuideVC" customModule="Prego" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="c3d-JW-U95">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GCQ-fC-4OQ">
+                                <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                            </scrollView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="1OX-TH-5XD">
+                                <rect key="frame" x="140" y="486" width="39" height="37"/>
+                                <color key="pageIndicatorTintColor" name="OrangeColor"/>
+                                <color key="currentPageIndicatorTintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </pageControl>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="GCQ-fC-4OQ" firstAttribute="top" secondItem="eIl-9G-cEO" secondAttribute="top" id="7Se-K3-1PR"/>
+                            <constraint firstItem="1OX-TH-5XD" firstAttribute="centerX" secondItem="c3d-JW-U95" secondAttribute="centerX" id="JbQ-AS-1nr"/>
+                            <constraint firstItem="GCQ-fC-4OQ" firstAttribute="leading" secondItem="eIl-9G-cEO" secondAttribute="leading" id="gla-Pe-gPN"/>
+                            <constraint firstItem="eIl-9G-cEO" firstAttribute="trailing" secondItem="GCQ-fC-4OQ" secondAttribute="trailing" id="ozt-Cf-ugU"/>
+                            <constraint firstItem="eIl-9G-cEO" firstAttribute="bottom" secondItem="1OX-TH-5XD" secondAttribute="bottom" constant="45" id="vS9-qU-uqq"/>
+                            <constraint firstItem="eIl-9G-cEO" firstAttribute="bottom" secondItem="GCQ-fC-4OQ" secondAttribute="bottom" id="wVx-7k-YNt"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="eIl-9G-cEO"/>
+                    </view>
+                    <connections>
+                        <outlet property="pageControll" destination="1OX-TH-5XD" id="svl-XN-2el"/>
+                        <outlet property="scrollView" destination="GCQ-fC-4OQ" id="ekI-Hj-dry"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="odL-g9-6B8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1860" y="859"/>
         </scene>
         <!--LoginVC-->
         <scene sceneID="6dL-vM-ouS">
@@ -137,6 +174,9 @@
                                         <state key="normal" title="Create an account ?">
                                             <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="Y4A-0y-hWh" kind="show" id="dlZ-rY-CQY"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tgp-B6-vQh">
                                         <rect key="frame" x="130" y="0.0" width="130" height="28"/>
@@ -524,6 +564,9 @@
                                                         <real key="value" value="0.40000000000000002"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <segue destination="Bv8-v7-fKj" kind="show" id="9Yk-B7-Vef"/>
+                                                </connections>
                                             </button>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="MUm-fE-QGL">
                                                 <rect key="frame" x="30" y="105" width="260" height="236"/>
