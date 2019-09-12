@@ -8,6 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		E7778116987ADEE7DD367154 /* Pods_Prego.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8184F1EF67839A3A51FA584 /* Pods_Prego.framework */; };
+		EB20EEF7231FDF0D00219EEF /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB20EEF6231FDF0D00219EEF /* User.swift */; };
+		EB20EEFC231FE27F00219EEF /* Parsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB20EEFB231FE27F00219EEF /* Parsing.swift */; };
+		EB20EEFE231FE2AB00219EEF /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB20EEFD231FE2AB00219EEF /* Response.swift */; };
+		EB20EF00231FE4A000219EEF /* LoginAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB20EEFF231FE4A000219EEF /* LoginAPI.swift */; };
+		EB20EF02231FE60E00219EEF /* DefaultManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB20EF01231FE60E00219EEF /* DefaultManager.swift */; };
+		EB20EF04231FE83D00219EEF /* AlertManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB20EF03231FE83D00219EEF /* AlertManager.swift */; };
+		EB20EF09231FE8FE00219EEF /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = EB20EF0B231FE8FE00219EEF /* Localizable.strings */; };
+		EB20EF0E231FF00700219EEF /* FacebookGoogleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB20EF0D231FF00700219EEF /* FacebookGoogleVC.swift */; };
+		EB20EF10231FF58000219EEF /* RegularExpression.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB20EF0F231FF58000219EEF /* RegularExpression.swift */; };
+		EB20EF12231FFAB500219EEF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EB20EF11231FFAB500219EEF /* GoogleService-Info.plist */; };
 		EB40D56F230D45A600559EAB /* HomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB40D56D230D45A600559EAB /* HomeCell.swift */; };
 		EB40D570230D45A600559EAB /* HomeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB40D56E230D45A600559EAB /* HomeCell.xib */; };
 		EB40D572230D470500559EAB /* ImagesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB40D571230D470500559EAB /* ImagesManager.swift */; };
@@ -61,11 +71,32 @@
 		EBA61D01230AA365001AC10F /* HomeTabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA61D00230AA365001AC10F /* HomeTabBarVC.swift */; };
 		EBA61D04230AA550001AC10F /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = EBA61D03230AA550001AC10F /* logo.png */; };
 		EBA61D06230AA62C001AC10F /* logo2.png in Resources */ = {isa = PBXBuildFile; fileRef = EBA61D05230AA62C001AC10F /* logo2.png */; };
+		EBEC81E6232A561C00977A76 /* FavoritesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBEC81E5232A561C00977A76 /* FavoritesVC.swift */; };
+		EBEC81E8232A5C5F00977A76 /* Favorite.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBEC81E7232A5C5F00977A76 /* Favorite.swift */; };
+		EBEC81EA232A5D5C00977A76 /* ProfileAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBEC81E9232A5D5C00977A76 /* ProfileAPI.swift */; };
+		EBEC81EC232A657100977A76 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBEC81EB232A657100977A76 /* Menu.swift */; };
+		EBEC81EE232A65FD00977A76 /* MenuAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBEC81ED232A65FD00977A76 /* MenuAPI.swift */; };
+		EBEC81F0232A7A2100977A76 /* SubSectionsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBEC81EF232A7A2100977A76 /* SubSectionsVC.swift */; };
+		EBEC81F2232A881C00977A76 /* TrackOrderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBEC81F1232A881C00977A76 /* TrackOrderVC.swift */; };
+		EBEC81F4232A8B8100977A76 /* Component.png in Resources */ = {isa = PBXBuildFile; fileRef = EBEC81F3232A8B8100977A76 /* Component.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		26B295048FE78A178C6C746D /* Pods-Prego.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Prego.debug.xcconfig"; path = "Target Support Files/Pods-Prego/Pods-Prego.debug.xcconfig"; sourceTree = "<group>"; };
 		B8184F1EF67839A3A51FA584 /* Pods_Prego.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Prego.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB20EEF6231FDF0D00219EEF /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		EB20EEFB231FE27F00219EEF /* Parsing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parsing.swift; sourceTree = "<group>"; };
+		EB20EEFD231FE2AB00219EEF /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		EB20EEFF231FE4A000219EEF /* LoginAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginAPI.swift; sourceTree = "<group>"; };
+		EB20EF01231FE60E00219EEF /* DefaultManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultManager.swift; sourceTree = "<group>"; };
+		EB20EF03231FE83D00219EEF /* AlertManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertManager.swift; sourceTree = "<group>"; };
+		EB20EF05231FE8BC00219EEF /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Main.strings; sourceTree = "<group>"; };
+		EB20EF06231FE8BD00219EEF /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		EB20EF0A231FE8FE00219EEF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		EB20EF0C231FE90200219EEF /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
+		EB20EF0D231FF00700219EEF /* FacebookGoogleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookGoogleVC.swift; sourceTree = "<group>"; };
+		EB20EF0F231FF58000219EEF /* RegularExpression.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegularExpression.swift; sourceTree = "<group>"; };
+		EB20EF11231FFAB500219EEF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		EB40D56D230D45A600559EAB /* HomeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCell.swift; sourceTree = "<group>"; };
 		EB40D56E230D45A600559EAB /* HomeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCell.xib; sourceTree = "<group>"; };
 		EB40D571230D470500559EAB /* ImagesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesManager.swift; sourceTree = "<group>"; };
@@ -121,6 +152,14 @@
 		EBA61D00230AA365001AC10F /* HomeTabBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBarVC.swift; sourceTree = "<group>"; };
 		EBA61D03230AA550001AC10F /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		EBA61D05230AA62C001AC10F /* logo2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo2.png; sourceTree = "<group>"; };
+		EBEC81E5232A561C00977A76 /* FavoritesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesVC.swift; sourceTree = "<group>"; };
+		EBEC81E7232A5C5F00977A76 /* Favorite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favorite.swift; sourceTree = "<group>"; };
+		EBEC81E9232A5D5C00977A76 /* ProfileAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileAPI.swift; sourceTree = "<group>"; };
+		EBEC81EB232A657100977A76 /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
+		EBEC81ED232A65FD00977A76 /* MenuAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuAPI.swift; sourceTree = "<group>"; };
+		EBEC81EF232A7A2100977A76 /* SubSectionsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubSectionsVC.swift; sourceTree = "<group>"; };
+		EBEC81F1232A881C00977A76 /* TrackOrderVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackOrderVC.swift; sourceTree = "<group>"; };
+		EBEC81F3232A8B8100977A76 /* Component.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Component.png; sourceTree = "<group>"; };
 		FC9F1A2F6D61402EE29D8EE8 /* Pods-Prego.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Prego.release.xcconfig"; path = "Target Support Files/Pods-Prego/Pods-Prego.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -145,6 +184,17 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		EB20EEF8231FE1C200219EEF /* API */ = {
+			isa = PBXGroup;
+			children = (
+				EB20EEFB231FE27F00219EEF /* Parsing.swift */,
+				EB20EEFF231FE4A000219EEF /* LoginAPI.swift */,
+				EBEC81E9232A5D5C00977A76 /* ProfileAPI.swift */,
+				EBEC81ED232A65FD00977A76 /* MenuAPI.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
 		EB40D583230D6FA600559EAB /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
@@ -162,6 +212,7 @@
 				EB40D58E230D734D00559EAB /* 2.jpg */,
 				EB40D58F230D734E00559EAB /* 3.jpg */,
 				EB40D58C230D734B00559EAB /* 4.jpg */,
+				EBEC81F3232A8B8100977A76 /* Component.png */,
 				EB40D575230D497800559EAB /* first.jpg */,
 				EB40D573230D497600559EAB /* second.jpg */,
 				EB40D574230D497700559EAB /* third.jpeg */,
@@ -217,9 +268,12 @@
 				EBA61CEF230AA08A001AC10F /* Local Data */,
 				EBA61CF0230AA09F001AC10F /* Cells */,
 				EBA61CF3230AA0D8001AC10F /* Model */,
+				EB20EEF8231FE1C200219EEF /* API */,
 				EBA61CED230AA068001AC10F /* View Controller */,
 				EBA61CF4230AA0E7001AC10F /* Views */,
 				EBA61CE7230AA05C001AC10F /* Info.plist */,
+				EB20EF11231FFAB500219EEF /* GoogleService-Info.plist */,
+				EB20EF0B231FE8FE00219EEF /* Localizable.strings */,
 			);
 			path = Prego;
 			sourceTree = "<group>";
@@ -228,13 +282,17 @@
 			isa = PBXGroup;
 			children = (
 				EBA61CF7230AA13A001AC10F /* SplashVC.swift */,
+				EB81A328230C0903002A0E9A /* LoginVC.swift */,
+				EB40D594230D7C8200559EAB /* SignUpVC.swift */,
+				EB20EF0D231FF00700219EEF /* FacebookGoogleVC.swift */,
 				EB5DE682230E987A00ACC340 /* GuideVC.swift */,
 				EBA61D00230AA365001AC10F /* HomeTabBarVC.swift */,
 				EBA61CFA230AA1AC001AC10F /* HomeVC.swift */,
 				EB40D57D230D67D900559EAB /* CusinesVC.swift */,
+				EBEC81EF232A7A2100977A76 /* SubSectionsVC.swift */,
 				EB40D596230D812300559EAB /* SubCusinesVC.swift */,
-				EB81A328230C0903002A0E9A /* LoginVC.swift */,
-				EB40D594230D7C8200559EAB /* SignUpVC.swift */,
+				EBEC81E5232A561C00977A76 /* FavoritesVC.swift */,
+				EBEC81F1232A881C00977A76 /* TrackOrderVC.swift */,
 			);
 			path = "View Controller";
 			sourceTree = "<group>";
@@ -290,6 +348,7 @@
 				EB81A32A230C0C26002A0E9A /* Utilits.swift */,
 				EB40D579230D4AF600559EAB /* Config.swift */,
 				EB40D57B230D4B4100559EAB /* URLManager.swift */,
+				EB20EF0F231FF58000219EEF /* RegularExpression.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -298,6 +357,10 @@
 			isa = PBXGroup;
 			children = (
 				EB5DE691230E9CCC00ACC340 /* Guide.swift */,
+				EB20EEF6231FDF0D00219EEF /* User.swift */,
+				EB20EEFD231FE2AB00219EEF /* Response.swift */,
+				EBEC81E7232A5C5F00977A76 /* Favorite.swift */,
+				EBEC81EB232A657100977A76 /* Menu.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -319,6 +382,8 @@
 				EB81A32C230C0E6B002A0E9A /* AppColorsManager.swift */,
 				EB40D571230D470500559EAB /* ImagesManager.swift */,
 				EB40D58A230D703200559EAB /* AppFontManager.swift */,
+				EB20EF01231FE60E00219EEF /* DefaultManager.swift */,
+				EB20EF03231FE83D00219EEF /* AlertManager.swift */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -389,6 +454,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ar,
 			);
 			mainGroup = EBA61CCC230AA059001AC10F;
 			productRefGroup = EBA61CD6230AA059001AC10F /* Products */;
@@ -408,13 +474,16 @@
 				EB5DE689230E99E400ACC340 /* SlideView.xib in Resources */,
 				EB40D578230D497800559EAB /* first.jpg in Resources */,
 				EB81A333230C1384002A0E9A /* google-plus.png in Resources */,
+				EBEC81F4232A8B8100977A76 /* Component.png in Resources */,
 				EB40D59B230D839F00559EAB /* SubCusinesCell.xib in Resources */,
 				EB40D570230D45A600559EAB /* HomeCell.xib in Resources */,
 				EBA61CE6230AA05C001AC10F /* LaunchScreen.storyboard in Resources */,
 				EB5DE68E230E9BAB00ACC340 /* TrackingOrder.png in Resources */,
 				EBA61D06230AA62C001AC10F /* logo2.png in Resources */,
 				EB40D588230D6FB500559EAB /* Roboto-Medium.ttf in Resources */,
+				EB20EF09231FE8FE00219EEF /* Localizable.strings in Resources */,
 				EBA61D04230AA550001AC10F /* logo.png in Resources */,
+				EB20EF12231FFAB500219EEF /* GoogleService-Info.plist in Resources */,
 				EB40D590230D734E00559EAB /* 4.jpg in Resources */,
 				EB40D582230D68ED00559EAB /* CusinesCell.xib in Resources */,
 				EB40D592230D734E00559EAB /* 2.jpg in Resources */,
@@ -538,9 +607,14 @@
 				EB40D597230D812300559EAB /* SubCusinesVC.swift in Sources */,
 				EBA61CFB230AA1AC001AC10F /* HomeVC.swift in Sources */,
 				EB5DE692230E9CCC00ACC340 /* Guide.swift in Sources */,
+				EBEC81E6232A561C00977A76 /* FavoritesVC.swift in Sources */,
 				EB40D56F230D45A600559EAB /* HomeCell.swift in Sources */,
+				EBEC81F0232A7A2100977A76 /* SubSectionsVC.swift in Sources */,
 				EB40D58B230D703200559EAB /* AppFontManager.swift in Sources */,
 				EB5DE687230E99B900ACC340 /* SlideView.swift in Sources */,
+				EB20EEF7231FDF0D00219EEF /* User.swift in Sources */,
+				EB20EF02231FE60E00219EEF /* DefaultManager.swift in Sources */,
+				EBEC81E8232A5C5F00977A76 /* Favorite.swift in Sources */,
 				EB81A329230C0903002A0E9A /* LoginVC.swift in Sources */,
 				EB40D581230D68ED00559EAB /* CusinesCell.swift in Sources */,
 				EBA61CD9230AA059001AC10F /* AppDelegate.swift in Sources */,
@@ -548,29 +622,49 @@
 				EB40D57C230D4B4100559EAB /* URLManager.swift in Sources */,
 				EBA61D01230AA365001AC10F /* HomeTabBarVC.swift in Sources */,
 				EB81A325230C0672002A0E9A /* Extensions+StatusView.swift in Sources */,
+				EB20EEFC231FE27F00219EEF /* Parsing.swift in Sources */,
+				EBEC81EE232A65FD00977A76 /* MenuAPI.swift in Sources */,
+				EB20EF04231FE83D00219EEF /* AlertManager.swift in Sources */,
 				EB5DE683230E987A00ACC340 /* GuideVC.swift in Sources */,
+				EB20EF10231FF58000219EEF /* RegularExpression.swift in Sources */,
 				EB81A32F230C0F4A002A0E9A /* Extensions+Controller.swift in Sources */,
 				EB40D595230D7C8200559EAB /* SignUpVC.swift in Sources */,
+				EB20EEFE231FE2AB00219EEF /* Response.swift in Sources */,
 				EB81A31F230C05E6002A0E9A /* Extensions+Button.swift in Sources */,
+				EB20EF0E231FF00700219EEF /* FacebookGoogleVC.swift in Sources */,
 				EBA61CF8230AA13A001AC10F /* SplashVC.swift in Sources */,
 				EB40D57A230D4AF600559EAB /* Config.swift in Sources */,
 				EB81A327230C068C002A0E9A /* Extensions+Cardview.swift in Sources */,
 				EB81A323230C0648002A0E9A /* Extensions+TextField.swift in Sources */,
+				EBEC81F2232A881C00977A76 /* TrackOrderVC.swift in Sources */,
 				EB81A32D230C0E6B002A0E9A /* AppColorsManager.swift in Sources */,
 				EB40D59A230D839F00559EAB /* SubCusinesCell.swift in Sources */,
+				EBEC81EC232A657100977A76 /* Menu.swift in Sources */,
+				EB20EF00231FE4A000219EEF /* LoginAPI.swift in Sources */,
 				EB40D572230D470500559EAB /* ImagesManager.swift in Sources */,
 				EB81A321230C061A002A0E9A /* Extensions+View.swift in Sources */,
 				EBA61CFD230AA1F6001AC10F /* NavigationManager.swift in Sources */,
+				EBEC81EA232A5D5C00977A76 /* ProfileAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		EB20EF0B231FE8FE00219EEF /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EB20EF0A231FE8FE00219EEF /* en */,
+				EB20EF0C231FE90200219EEF /* ar */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		EBA61CDC230AA059001AC10F /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				EBA61CDD230AA059001AC10F /* Base */,
+				EB20EF05231FE8BC00219EEF /* ar */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -579,6 +673,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				EBA61CE5230AA05C001AC10F /* Base */,
+				EB20EF06231FE8BD00219EEF /* ar */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -590,6 +685,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -650,6 +746,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -712,7 +809,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.otherlogic.Prego;
+				PRODUCT_BUNDLE_IDENTIFIER = com.otherlogic.PregoApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -731,7 +828,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.otherlogic.Prego;
+				PRODUCT_BUNDLE_IDENTIFIER = com.otherlogic.PregoApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

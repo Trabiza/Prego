@@ -15,8 +15,8 @@ class CusinesCell: UICollectionViewCell {
 
     
     func seImage(url: String) {
-        //ImagesManager.setImage(url: url, image: imageView)
-        imageView.image = UIImage(named: url)
+        ImagesManager.setImage(url: url, image: imageView)
+        //imageView.image = UIImage(named: url)
     }
 
 }

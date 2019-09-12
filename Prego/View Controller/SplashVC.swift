@@ -13,8 +13,13 @@ class SplashVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        DispatchQueue.main.asyncAfter(deadline: .now() + 3.0, execute: {
-            NavigationManager.toHome(self)
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.0, execute: {
+            if DefaultManager.getUserToken() == nil {
+                //NavigationManager.toLogin(self)
+                NavigationManager.toHome(self)
+            }else{
+                NavigationManager.toHome(self)
+            }
         })
     }
 

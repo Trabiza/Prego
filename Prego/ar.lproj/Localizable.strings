@@ -1,0 +1,28 @@
+/* 
+  Localizable.strings
+  Prego
+
+  Created by owner on 9/4/19.
+  Copyright © 2019 Y2M. All rights reserved.
+*/
+
+"yes" = "نعم";
+"no" = "لا";
+"ok" = "تم";
+"wrong" = "خطأ";
+"warning" = "تحذير";
+"submit" = "تم";
+"wrong_email_or_password" = "البريد الالكتروني او كلمة المرور غير صحيحة";
+"cancel" = "إلغاء";
+"wrong_message" = "حدث خطا ما من فضلك حاول مرة اخري";
+
+"minimum_password_length" = "أقل عدد لعدد الكلمة السر هو 6";
+"invalid_mobile" = "من فضلك قم بادخال رقم موبايل صحيح";
+"empty_data_message" = " من فضلك قم بادخال ";
+"email_input_matching" = "من فضلك ادخل صيغة صحيحه للبريد الإلكترونى";
+"firstname" = "الإسم الاول";
+"lastname" = "الإسم الأخير";
+"dupicate_email" = "البريد الالكتروني مستخدم بالفعل";
+"dupicate_mobile" = "رقم الموبايل مسجل من قبل من فضلك قم بتسجيل الدخول";
+
+"price_start" = "يبدأ من";

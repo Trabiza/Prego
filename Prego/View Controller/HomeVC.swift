@@ -20,6 +20,10 @@ class HomeVC: UIViewController {
         super.viewDidLoad()
 
         registerCollection()
+        
+        if let token = DefaultManager.getUserToken() {
+            print("token is \(token)")
+        }
     }
     
     func registerCollection(){

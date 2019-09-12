@@ -16,4 +16,11 @@ public class NavigationManager {
             vc.present(desVC, animated: true)
         }
     }
+    
+    static func toLogin(_ vc: UIViewController){
+        let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        if let desVC = mainStoryboard.instantiateViewController(withIdentifier: "LoginVC") as? LoginVC {
+            vc.present(desVC, animated: true)
+        }
+    }
 }

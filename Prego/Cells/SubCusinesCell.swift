@@ -18,7 +18,22 @@ class SubCusinesCell: UITableViewCell {
     @IBOutlet weak var detailsLabel: UILabel!
     
     func seImage(url: String) {
-        //ImagesManager.setImage(url: url, image: imageView)
-        mImageView.image = UIImage(named: url)
+        ImagesManager.setImage(url: url, image: mImageView)
+        //mImageView.image = UIImage(named: url)
+    }
+    
+    func setPrice(info: [Info]) {
+        if !info.isEmpty {
+            if DefaultManager.getLanguageDefault() == Config.English {
+                if let price = info[0].priceEn {
+                    priceLabel.text = "\(NSLocalizedString("price_start", comment: "")) \(price)"
+                }
+            }else{
+                if let price = info[0].priceAr {
+                    priceLabel.text = "\(NSLocalizedString("price_start", comment: "")) \(price)"
+                }
+            }
+            
+        }
     }
 }

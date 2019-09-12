@@ -14,19 +14,16 @@ class CusinesVC: UIViewController {
     @IBOutlet weak var mCollectionView: UICollectionView!
     
     let subCusinesSegue: String = "subCusinesSegue"
+    let subSectionsSegue: String = "subSectionSegue"
     let nibCellName: String = "CusinesCell"
-    var mList: [String] = ["first.jpg", "second.jpg", "third.jpeg",
-                           "first.jpg", "second.jpg", "third.jpeg",
-                           "first.jpg", "second.jpg", "third.jpeg",
-                           "first.jpg", "second.jpg", "third.jpeg"]
+    var mList: [Menu] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
-        // Do any additional setup after loading the view.
         setUI()
         registerCollection()
+        loadMenus()
     }
     
     func setUI(){
@@ -36,6 +33,20 @@ class CusinesVC: UIViewController {
     
     func registerCollection(){
         mCollectionView.register(UINib(nibName: nibCellName, bundle: nil), forCellWithReuseIdentifier: nibCellName)
+    }
+    
+    func loadMenus(){
+        MenuAPI.menus(view: self.view) { (error, success, list) in
+            if error != nil || !success {
+                return
+            }
+            if list != nil {
+                if (list?.count)! > 0 {
+                    self.mList = list![0].sections!
+                    self.mCollectionView.reloadData()
+                }
+            }
+        }
     }
 
 }
@@ -55,8 +66,19 @@ extension CusinesVC: UICollectionViewDelegateFlowLayout, UICollectionViewDelegat
         
         let cell:CusinesCell = collectionView.dequeueReusableCell(withReuseIdentifier: nibCellName , for: indexPath) as! CusinesCell
         cell.shadowAndBorderForCell(cell: cell)
-        cell.seImage(url: mList[indexPath.row])
-        cell.titleLabel.text = "Sandwiches"
+        
+        if let image = mList[indexPath.row].image {
+            cell.seImage(url: image)
+        }
+        if DefaultManager.getLanguageDefault() == Config.English {
+            if let title = mList[indexPath.row].nameEn {
+                cell.titleLabel.text = title
+            }
+        }else{
+            if let title = mList[indexPath.row].nameAr {
+                cell.titleLabel.text = title
+            }
+        }
         return cell
     }
     
@@ -73,6 +95,51 @@ extension CusinesVC: UICollectionViewDelegateFlowLayout, UICollectionViewDelegat
     
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        performSegue(withIdentifier: subCusinesSegue, sender: nil)
+        
+        if let subSections = mList[indexPath.row].sections {
+            if !subSections.isEmpty {
+                
+                performSegue(withIdentifier: subSectionsSegue, sender: indexPath.row)
+            }else{
+                performSegue(withIdentifier: subCusinesSegue, sender: indexPath.row)
+            }
+        }else{
+            
+            performSegue(withIdentifier: subCusinesSegue, sender: indexPath.row)
+        }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == subCusinesSegue {
+            let desVC = segue.destination as! SubCusinesVC
+            guard let sectionItems = mList[sender as! Int].items else {
+                return
+            }
+            desVC.list = sectionItems
+            if DefaultManager.getLanguageDefault() == Config.English {
+                if let title = mList[sender as! Int].nameEn {
+                    desVC.barTitle = title
+                }
+            }else{
+                if let title = mList[sender as! Int].nameAr {
+                    desVC.barTitle = title
+                }
+            }
+        }else if segue.identifier == subSectionsSegue {
+            guard let subSections = mList[sender as! Int].sections else {
+                return
+            }
+            let desVC = segue.destination as! SubSectionsVC
+            desVC.mList = subSections
+            if DefaultManager.getLanguageDefault() == Config.English {
+                if let title = mList[sender as! Int].nameEn {
+                    desVC.barTitle = title
+                }
+            }else{
+                if let title = mList[sender as! Int].nameAr {
+                    desVC.barTitle = title
+                }
+            }
+        }
     }
 }

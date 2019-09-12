@@ -1,0 +1,29 @@
+/* 
+  Localizable.strings
+  Prego
+
+  Created by owner on 9/4/19.
+  Copyright © 2019 Y2M. All rights reserved.
+*/
+
+
+"yes" = "Yes";
+"no" = "No";
+"ok" = "OK";
+"wrong" = "Wrong";
+"warning" = "Warning";
+"submit" = "Submit";
+"wrong_email_or_password" = "Invalid email or Password";
+"cancel" = "Cancel";
+"wrong_message" = "Something wrong happedend please try again";
+
+"minimum_password_length" = "Passwords  must be at least 6 characters";
+"invalid_mobile" = "Invalid mobile number";
+"empty_data_message" = "is empty please fill it";
+"email_input_matching" = "Please enter valid email";
+"firstname" = "First name";
+"lastname" = "Last name";
+"dupicate_email" = "Email is already member before please login it";
+"dupicate_mobile" = "Mobile is already member before please login it";
+
+"price_start" = "From";

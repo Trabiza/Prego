@@ -1,35 +1,32 @@
 //
-//  SubCusinesVC.swift
+//  FavoritesVC.swift
 //  Prego
 //
-//  Created by owner on 8/21/19.
+//  Created by owner on 9/12/19.
 //  Copyright © 2019 Y2M. All rights reserved.
 //
 
 import UIKit
 
-class SubCusinesVC: UIViewController {
-
+class FavoritesVC: UIViewController {
+    
     @IBOutlet weak var mTableView: UITableView!
     @IBOutlet weak var mView: UIView!
-    @IBOutlet weak var backBtn: UIButton!
-    @IBOutlet weak var titleLabel: UILabel!
     
     let nibCellName: String = "SubCusinesCell"
-    var list: [Item] = []
-    var barTitle: String = "Menu"
-    
+    var list: [Favorite] = []
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
         setUI()
         registerTableView()
+        loadData()
     }
-
+    
     func setUI(){
         hideStatusBarLine()
         Utilits.cornerLeftRight(view: mView)
-        titleLabel.text = barTitle
     }
     
     func registerTableView(){
@@ -39,12 +36,24 @@ class SubCusinesVC: UIViewController {
         mTableView.register(UINib(nibName: nibCellName, bundle: nil), forCellReuseIdentifier: nibCellName)
     }
     
-    @IBAction func backAction(_ sender: Any) {
-        self.navigationController?.popViewController(animated: true)
+    func loadData(){
+        
+        guard let token = DefaultManager.getUserToken() else {
+            return
+        }
+        
+        ProfileAPI.favorites(token: token, view: self.view) { (error, success, list) in
+            if error != nil || !success {
+                return
+            }
+            self.list = list!
+            self.mTableView.reloadData()
+        }
     }
+
 }
 
-extension SubCusinesVC: UITableViewDelegate, UITableViewDataSource {
+extension FavoritesVC: UITableViewDelegate, UITableViewDataSource {
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
@@ -57,34 +66,36 @@ extension SubCusinesVC: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: SubCusinesCell = mTableView.dequeueReusableCell(withIdentifier: nibCellName, for: indexPath) as! SubCusinesCell
         cell.selectionStyle = .none
-        let item = list[indexPath.row]
-        if DefaultManager.getLanguageDefault() == Config.English {
-            if let name = item.nameEn {
-                cell.titleLabel.text = name
+        if let item = list[indexPath.row].itemName {
+            if DefaultManager.getLanguageDefault() == Config.English {
+                if let name = item.nameEn {
+                    cell.titleLabel.text = name
+                }
+                if let desc = item.desriptionEn {
+                    cell.detailsLabel.text = desc
+                }
+            }else{
+                if let name = item.nameAr {
+                    cell.titleLabel.text = name
+                }
+                if let desc = item.desriptionAr {
+                    cell.detailsLabel.text = desc
+                }
+                
             }
-            if let desc = item.desriptionEn {
-                cell.detailsLabel.text = desc
+            if let info = item.info {
+                cell.setPrice(info: info)
             }
-        }else{
-            if let name = item.nameAr {
-                cell.titleLabel.text = name
+            if let image = item.image {
+                cell.seImage(url: image)
             }
-            if let desc = item.desriptionAr {
-                cell.detailsLabel.text = desc
-            }
-            
         }
-        if let info = item.info {
-            cell.setPrice(info: info)
-        }
-        if let image = item.image {
-            cell.seImage(url: image)
-        }
+        
         return cell
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 260
+        return 270
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

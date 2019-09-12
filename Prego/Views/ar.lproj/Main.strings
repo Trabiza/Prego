@@ -1,0 +1,78 @@
+
+/* Class = "UILabel"; text = "This menu is valuble have many options"; ObjectID = "1QY-Tb-f9S"; */
+"1QY-Tb-f9S.text" = "This menu is valuble have many options";
+
+/* Class = "UITextField"; placeholder = "Mobile"; ObjectID = "7Xb-Vo-YGD"; */
+"7Xb-Vo-YGD.placeholder" = "Mobile";
+
+/* Class = "UILabel"; text = "This menu is valuble have many options"; ObjectID = "86L-nE-cbc"; */
+"86L-nE-cbc.text" = "This menu is valuble have many options";
+
+/* Class = "UITextField"; placeholder = "Name"; ObjectID = "H28-TH-lsf"; */
+"H28-TH-lsf.placeholder" = "Name";
+
+/* Class = "UIButton"; normalTitle = "Skip"; ObjectID = "HIW-xZ-MBT"; */
+"HIW-xZ-MBT.normalTitle" = "Skip";
+
+/* Class = "UIButton"; normalTitle = "Create an account ?"; ObjectID = "IdJ-tE-8Ht"; */
+"IdJ-tE-8Ht.normalTitle" = "Create an account ?";
+
+/* Class = "UIButton"; normalTitle = "Continue with facebook"; ObjectID = "LNB-bN-H06"; */
+"LNB-bN-H06.normalTitle" = "Continue with facebook";
+
+/* Class = "UIButton"; normalTitle = "Continue with facebook"; ObjectID = "LwS-MT-ITM"; */
+"LwS-MT-ITM.normalTitle" = "Continue with facebook";
+
+/* Class = "UILabel"; text = "Delivering"; ObjectID = "Oyx-0w-qeb"; */
+"Oyx-0w-qeb.text" = "Delivering";
+
+/* Class = "UITabBarItem"; title = "Home"; ObjectID = "Ua3-Ft-QEK"; */
+"Ua3-Ft-QEK.title" = "Home";
+
+/* Class = "UITextField"; placeholder = "Email Address"; ObjectID = "Yod-Ib-uFG"; */
+"Yod-Ib-uFG.placeholder" = "Email Address";
+
+/* Class = "UITabBarItem"; title = "Item"; ObjectID = "h8o-mX-qty"; */
+"h8o-mX-qty.title" = "Item";
+
+/* Class = "UIButton"; normalTitle = "Skip"; ObjectID = "h9T-rU-lqy"; */
+"h9T-rU-lqy.normalTitle" = "Skip";
+
+/* Class = "UIButton"; normalTitle = "Continue with google"; ObjectID = "iHd-Q3-d7r"; */
+"iHd-Q3-d7r.normalTitle" = "Continue with google";
+
+/* Class = "UIButton"; normalTitle = "Continue with google"; ObjectID = "iNb-85-sdh"; */
+"iNb-85-sdh.normalTitle" = "Continue with google";
+
+/* Class = "UINavigationItem"; title = "Menu"; ObjectID = "imB-af-keW"; */
+"imB-af-keW.title" = "Menu";
+
+/* Class = "UILabel"; text = "Current Location"; ObjectID = "jXm-oN-gSQ"; */
+"jXm-oN-gSQ.text" = "Current Location";
+
+/* Class = "UITextField"; placeholder = "Password"; ObjectID = "m0V-lX-uMx"; */
+"m0V-lX-uMx.placeholder" = "Password";
+
+/* Class = "UITabBarItem"; title = "Item"; ObjectID = "n7B-Sl-uF1"; */
+"n7B-Sl-uF1.title" = "Item";
+
+/* Class = "UINavigationItem"; title = "Menu"; ObjectID = "oNW-E3-2q2"; */
+"oNW-E3-2q2.title" = "Menu";
+
+/* Class = "UIButton"; normalTitle = "Login"; ObjectID = "q9Z-ku-PVy"; */
+"q9Z-ku-PVy.normalTitle" = "Login";
+
+/* Class = "UITabBarItem"; title = "Item 2"; ObjectID = "t8H-9r-73Q"; */
+"t8H-9r-73Q.title" = "Item 2";
+
+/* Class = "UIButton"; normalTitle = "Forget Password ?"; ObjectID = "tgp-B6-vQh"; */
+"tgp-B6-vQh.normalTitle" = "Forget Password ?";
+
+/* Class = "UITextField"; placeholder = "Email Address"; ObjectID = "vnC-aT-6KO"; */
+"vnC-aT-6KO.placeholder" = "Email Address";
+
+/* Class = "UIButton"; normalTitle = "Create Account"; ObjectID = "zJ0-bz-nna"; */
+"zJ0-bz-nna.normalTitle" = "Create Account";
+
+/* Class = "UITextField"; placeholder = "Password"; ObjectID = "zf8-Oa-NqI"; */
+"zf8-Oa-NqI.placeholder" = "Password";

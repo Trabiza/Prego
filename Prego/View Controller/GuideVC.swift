@@ -30,19 +30,30 @@ class GuideVC: UIViewController {
         view.bringSubview(toFront: pageControll)
     }
     
+    @IBAction func createAccountAction(_ sender: Any) {
+        NavigationManager.toLogin(self)
+    }
+    
+    @IBAction func skipAction(_ sender: Any) {
+        NavigationManager.toLogin(self)
+    }
+    
     func createSlides() -> [SlideView] {
         
         let slide1:SlideView = Bundle.main.loadNibNamed("SlideView", owner: self, options: nil)?.first as! SlideView
         slide1.mImageView.image = UIImage(named: "ChooseFood.png")
         slide1.titleLabel.text = "Choose Food"
+        slide1.descritionLabel.text = "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
         
         let slide2:SlideView = Bundle.main.loadNibNamed("SlideView", owner: self, options: nil)?.first as! SlideView
         slide2.mImageView.image = UIImage(named: "FastDelivery.png")
         slide2.titleLabel.text = "Fast Delivery"
+        slide2.descritionLabel.text = "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
         
         let slide3:SlideView = Bundle.main.loadNibNamed("SlideView", owner: self, options: nil)?.first as! SlideView
         slide3.mImageView.image = UIImage(named: "TrackingOrder.png")
         slide3.titleLabel.text = "Tracking Order"
+        slide3.descritionLabel.text = "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
         
         return [slide1, slide2, slide3]
     }
