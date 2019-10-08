@@ -14,41 +14,53 @@ class HomeVC: UIViewController {
     @IBOutlet weak var pageControll: UIPageControl!
     
     let nibCellName: String = "HomeCell"
-    var mList: [String] = ["1.jpeg", "2.jpg", "3.jpg", "4.jpg"]
+    var list: [Slider] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         registerCollection()
+        getSlider()
         
         if let token = DefaultManager.getUserToken() {
             print("token is \(token)")
         }
     }
     
+    func getSlider(){
+        ProfileAPI.slider(view: self.view) { (error, success, list) in
+            if error != nil || !success{
+                return
+            }
+            self.list = list!
+            self.pageControll.numberOfPages = self.list.count
+            self.mCollectionView.reloadData()
+        }
+    }
+    
     func registerCollection(){
         mCollectionView.register(UINib(nibName: nibCellName, bundle: nil), forCellWithReuseIdentifier: nibCellName)
-        pageControll.numberOfPages = mList.count
     }
 }
 
 
 extension HomeVC: UICollectionViewDelegateFlowLayout, UICollectionViewDelegate, UICollectionViewDataSource{
-    
-    
+
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return mList.count
+        return list.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         let cell:HomeCell = collectionView.dequeueReusableCell(withReuseIdentifier: nibCellName , for: indexPath) as! HomeCell
         
-        cell.seImage(url: mList[indexPath.row])
+        if let image = list[indexPath.row].image {
+           cell.seImage(url: image)
+        }
         return cell
     }
     
@@ -57,7 +69,7 @@ extension HomeVC: UICollectionViewDelegateFlowLayout, UICollectionViewDelegate, 
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let width = self.view.frame.width
+        let width = self.mCollectionView.frame.width
         let height = self.mCollectionView.frame.height
         return CGSize(width: width, height: height)
     }

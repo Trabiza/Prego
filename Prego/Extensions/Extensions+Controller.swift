@@ -8,6 +8,8 @@
 
 import UIKit
 
+
+
 extension UIViewController {
     func hideKeyboardWhenTappedAround() {
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIViewController.dismissKeyboard))
@@ -20,9 +22,28 @@ extension UIViewController {
     }
 }
 
+
+extension UIViewController {
+    
+    func setupBagView(bagView: UIView){
+        let bagVC = Utilits.getBagVC(self)
+        bagView.addSubview(bagVC.view)
+        bagVC.view.frame = bagView.bounds
+        bagVC.view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        bagVC.didMove(toParentViewController: self)
+    }
+}
+
 extension UIViewController {
     func hideStatusBarLine(){
         self.navigationController?.navigationBar.shouldRemoveShadow(true)
+    }
+    
+    func needLogin() -> Bool {
+        guard DefaultManager.getUserToken() != nil else {
+            return true
+        }
+        return false
     }
 }
 
@@ -72,4 +93,35 @@ extension UIViewController {
         })
     }
     
+}
+
+
+extension UIViewController {
+    func loopThroughSubViewAndFlipTheImageIfItsAUIButton(subviews: [UIView]) {
+        if subviews.count > 0 {
+            for subView in subviews {
+                if (subView is UIButton) && subView.tag < 0 {
+                    print("button rotate")
+                    let btn = subView as! UIButton
+                    btn.transform = btn.transform.rotated(by: CGFloat(Double.pi * 2))
+                }
+                loopThroughSubViewAndFlipTheImageIfItsAUIImageView(subviews: subView.subviews)
+            }
+        }
+    }
+    
+    func loopThroughSubViewAndFlipTheImageIfItsAUIImageView(subviews: [UIView]) {
+        if subviews.count > 0 {
+            for subView in subviews {
+                if (subView is UIImageView) && subView.tag < 0 {
+                    let toRightArrow = subView as! UIImageView
+                    if let _img = toRightArrow.image {
+                        toRightArrow.image = UIImage(cgImage: _img.cgImage!, scale:_img.scale , orientation: UIImageOrientation.upMirrored)
+                        //toRightArrow.tintColor = UIColor.darkGray
+                    }
+                }
+                loopThroughSubViewAndFlipTheImageIfItsAUIImageView(subviews: subView.subviews)
+            }
+        }
+    }
 }

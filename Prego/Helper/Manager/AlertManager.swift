@@ -21,6 +21,10 @@ public class AlertManager {
         oneAction(on: vc, mTitle: NSLocalizedString("warning", comment: "warning") , mActionTitle: NSLocalizedString("ok", comment: "ok"), mMessage: NSLocalizedString("wrong_message", comment: "wrong_message"))
     }
     
+    static func showWrongAlertWithMessage(on vc: UIViewController, message: String){
+        oneAction(on: vc, mTitle: NSLocalizedString("warning", comment: "warning") , mActionTitle: NSLocalizedString("ok", comment: "ok"), mMessage: message)
+    }
+    
     static func showLoginMobileFailed(on vc: UIViewController){
         oneAction(on: vc, mTitle: NSLocalizedString("wrong", comment: "wrong"), mActionTitle: NSLocalizedString("ok", comment: "ok"), mMessage: NSLocalizedString("wrong_email_or_password", comment: ""))
     }

@@ -48,8 +48,8 @@ struct ItemName: Codable {
         case id
         case nameEn = "name_en"
         case nameAr = "name_ar"
-        case desriptionEn = "desription_en"
-        case desriptionAr = "desription_ar"
+        case desriptionEn = "description_en"
+        case desriptionAr = "description_ar"
         case code, extras
         case menuID = "menu_id"
         case sectionID = "section_id"

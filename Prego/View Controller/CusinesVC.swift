@@ -11,6 +11,7 @@ import UIKit
 class CusinesVC: UIViewController {
 
     @IBOutlet weak var mView: UIView!
+    @IBOutlet weak var bagView: UIView!
     @IBOutlet weak var mCollectionView: UICollectionView!
     
     let subCusinesSegue: String = "subCusinesSegue"
@@ -18,12 +19,20 @@ class CusinesVC: UIViewController {
     let nibCellName: String = "CusinesCell"
     var mList: [Menu] = []
     
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         setUI()
         registerCollection()
         loadMenus()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(false)
+        
+        setupBagView(bagView: bagView)
     }
     
     func setUI(){

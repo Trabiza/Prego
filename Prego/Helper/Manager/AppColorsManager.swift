@@ -10,4 +10,5 @@ import UIKit
 
 struct AppColorsManager {
     static var orangeColor           = UIColor(named: "OrangeColor")
+    static var grayColor             = UIColor(named: "Gray")
 }

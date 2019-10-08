@@ -67,5 +67,63 @@ public class Parsing {
         }
         return user!
     }
-
+    
+    static func parseItem(jsonData: DataResponse<Any>?) -> ItemModel? {
+        
+        var user: ItemModel?
+        do{
+            user = try JSONDecoder().decode(ItemModel.self, from: (jsonData?.data!)!)
+            
+        }catch {
+            print("Error: \(error)")
+        }
+        return user!
+    }
+    
+    static func parseBranches(jsonData: DataResponse<Any>?) -> BranchModel? {
+        
+        var user: BranchModel?
+        do{
+            user = try JSONDecoder().decode(BranchModel.self, from: (jsonData?.data!)!)
+            
+        }catch {
+            print("Error: \(error)")
+        }
+        return user!
+    }
+    static func parseAddress(jsonData: DataResponse<Any>?) -> AddressModel? {
+        
+        var user: AddressModel?
+        do{
+            user = try JSONDecoder().decode(AddressModel.self, from: (jsonData?.data!)!)
+            
+        }catch {
+            print("Error: \(error)")
+        }
+        return user!
+    }
+    
+    static func parseHome(jsonData: DataResponse<Any>?) -> HomeSlider? {
+        
+        var user: HomeSlider?
+        do{
+            user = try JSONDecoder().decode(HomeSlider.self, from: (jsonData?.data!)!)
+            
+        }catch {
+            print("Error: \(error)")
+        }
+        return user!
+    }
+    
+    static func parseCoupon(jsonData: DataResponse<Any>?) -> CouponModel? {
+        
+        var user: CouponModel?
+        do{
+            user = try JSONDecoder().decode(CouponModel.self, from: (jsonData?.data!)!)
+            
+        }catch {
+            print("Error: \(error)")
+        }
+        return user!
+    }
 }

@@ -33,9 +33,21 @@ class DefaultManager {
     
     //Language defaults
     static func saveLanguageDefault(language: String) {
-        //UserDefaults.standard.set(language , forKey: Constants.languageDefault)
         let userdef = UserDefaults.standard
         userdef.set(language , forKey: Config.languageDefault)
+        userdef.synchronize()
+    }
+    
+
+    static func saveTitleBranchDefault(value: String) {
+        let userdef = UserDefaults.standard
+        userdef.set(value , forKey: Config.titleBranchDefault)
+        userdef.synchronize()
+    }
+    
+    static func saveAddressBranchDefault(value: String) {
+        let userdef = UserDefaults.standard
+        userdef.set(value , forKey: Config.addressBranchDefault)
         userdef.synchronize()
     }
     

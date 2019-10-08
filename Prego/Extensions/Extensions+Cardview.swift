@@ -39,4 +39,35 @@ extension UITableViewCell{
         cell.layer.masksToBounds = false
         cell.layer.shadowPath = UIBezierPath(roundedRect:cell.bounds, cornerRadius:cell.contentView.layer.cornerRadius).cgPath
     }
+    
+    func shadowAndBorderForTableViewCell(cell : UITableViewCell, cornerRadious: Int){
+        // SHADOW AND BORDER FOR CELL
+        cell.contentView.layer.cornerRadius = CGFloat(cornerRadious)
+        cell.contentView.layer.borderWidth = 0
+        cell.contentView.layer.borderColor = UIColor.lightGray.cgColor
+        cell.contentView.layer.masksToBounds = true
+        cell.layer.shadowColor = UIColor.lightGray.cgColor
+        cell.layer.shadowOffset = CGSize(width: 0, height: 2.0)
+        cell.layer.shadowRadius = 2.0
+        cell.layer.shadowOpacity = 1.0
+        cell.layer.masksToBounds = false
+        cell.layer.shadowPath = UIBezierPath(roundedRect:cell.bounds, cornerRadius:cell.contentView.layer.cornerRadius).cgPath
+    }
+}
+
+
+extension UIView{
+    func shadowAndBorderForTableViewCell(cell : UIView, cornerRadious: Int){
+        // SHADOW AND BORDER FOR CELL
+        cell.layer.cornerRadius = CGFloat(cornerRadious)
+        cell.layer.borderWidth = 0
+        cell.layer.borderColor = UIColor.lightGray.cgColor
+        cell.layer.masksToBounds = true
+        cell.layer.shadowColor = UIColor.lightGray.cgColor
+        cell.layer.shadowOffset = CGSize(width: 0, height: 2.0)
+        cell.layer.shadowRadius = 2.0
+        cell.layer.shadowOpacity = 1.0
+        cell.layer.masksToBounds = false
+        //cell.layer.shadowPath = UIBezierPath(roundedRect:cell.bounds, cornerRadius:cell.layer.cornerRadius).cgPath
+    }
 }

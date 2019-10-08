@@ -14,6 +14,7 @@ class SubCusinesVC: UIViewController {
     @IBOutlet weak var mView: UIView!
     @IBOutlet weak var backBtn: UIButton!
     @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var bagView: UIView!
     
     let nibCellName: String = "SubCusinesCell"
     var list: [Item] = []
@@ -24,6 +25,11 @@ class SubCusinesVC: UIViewController {
 
         setUI()
         registerTableView()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(false)
+        setupBagView(bagView: bagView)
     }
 
     func setUI(){
@@ -89,5 +95,14 @@ extension SubCusinesVC: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
+        guard let itemID = list[indexPath.row].id else {
+            return
+        }
+        
+        let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        if let desVC = mainStoryboard.instantiateViewController(withIdentifier: "DetailsViewController") as? DetailsViewController {
+            desVC.itemID = "\(itemID)"
+            self.present(desVC, animated: true)
+        }
     }
 }

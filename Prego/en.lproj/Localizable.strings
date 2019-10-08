@@ -27,3 +27,21 @@
 "dupicate_mobile" = "Mobile is already member before please login it";
 
 "price_start" = "From";
+
+"terms" = "Terms And conditions";
+"privacy" = "Privacy policy";
+"refund" = "Refund policy";
+
+"invalid_coupon" = "Invalid Coupon Code";
+
+"quatity_error" = "You should at least choose one";
+
+"price_error" = "You should choose at least one size";
+
+"option_required" = "Please choose the requried field";
+"size_requried" = "Please choose size of item";
+
+"order_success" = "Your order is success check your cart";
+"fields_required" = "Please fill all fields";
+
+

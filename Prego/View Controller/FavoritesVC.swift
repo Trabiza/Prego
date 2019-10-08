@@ -12,6 +12,7 @@ class FavoritesVC: UIViewController {
     
     @IBOutlet weak var mTableView: UITableView!
     @IBOutlet weak var mView: UIView!
+    @IBOutlet weak var bagView: UIView!
     
     let nibCellName: String = "SubCusinesCell"
     var list: [Favorite] = []
@@ -21,6 +22,13 @@ class FavoritesVC: UIViewController {
 
         setUI()
         registerTableView()
+        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(false)
+        
+        setupBagView(bagView: bagView)
         loadData()
     }
     
@@ -48,6 +56,7 @@ class FavoritesVC: UIViewController {
             }
             self.list = list!
             self.mTableView.reloadData()
+            print("fav count \(self.list.count)")
         }
     }
 
@@ -100,5 +109,15 @@ extension FavoritesVC: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
+        guard let itemID = list[indexPath.row].itemID else {
+            return
+        }
+        
+        let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        if let desVC = mainStoryboard.instantiateViewController(withIdentifier: "DetailsViewController") as? DetailsViewController {
+            desVC.itemID = "\(itemID)"
+            self.present(desVC, animated: true)
+        
+        }
     }
 }
